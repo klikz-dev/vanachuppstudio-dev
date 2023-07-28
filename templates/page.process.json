@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "fdbd9ca0-9d71-4ede-832d-06bd1fb6a31e": {
+      "type": "featured-text",
+      "custom_css": [
+        "h2 {color: #98acc9;}"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "How To Order",
+        "text": "<p>We work with your favorite photographs to create Custom Silhouettes of the people, pets, and special moments in your life. From those treasured pictures, Vana Chupp Studio creates one-of-a-kind heirloom pieces: silhouette portraits and exquisite jewelry, and perfectly personal accessories. All custom silhouettes created by Vana Chupp Studio will be kept on file for any future uses you may have.<\/p>"
+      }
+    },
+    "169bf9af-6600-4f69-b23c-4c7846a39930": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h3 {color: #98acc9;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": true,
+        "image-aspect-ratio": 56,
+        "mobile-image-aspect-ratio": 134,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "large",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Untitled-2_ced94be8-9ed6-411c-a493-dfee0ddbc792.jpg",
+        "overline": "",
+        "title": "Selecting A Custom Silhouette Product",
+        "description": "<p>To order any of our products with a custom silhouette from your photographs, start by selecting the desired product. Where applicable, you may select from our existing silhouette stock or request for your Custom silhouette to be created. If you have ordered from us before, you may choose to re-use the silhouette on file. Each new custom silhouette we create is subject to a one-time-design fee ($10.00). Please note that each person, pet, makes for one custom silhouette - a family of four (dad, mom, two kids) will require four silhouettes. Use this as a guideline when selecting the quantity of Custom Silhouettes for your order.<\/p>",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "ee468aab-39f4-4939-ae03-658e79f5a49c": {
+      "type": "featured-text",
+      "custom_css": [
+        "h2 {color: #98acc9;}"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "Submitting Photos For Custom Silhouettes",
+        "text": "<p>Once you have selected your desired product, and chosen the option to <strong>\"create custom silhouette from my photos\"<\/strong>, you can upload your photo\/s right on the order form. You can do this by clicking the <strong>\"Upload photos\"<\/strong> button. You will see the uploaded photos when you add the product to the cart. If for some reason you aren't able to upload photos while filling out your order, you can always email them to us at orders@vanachuppstudio.com (please place your order number on the email's subject line).<\/p><p><strong>Pro Tip:<\/strong> We now offer the option to purchase the <a href=\"https:\/\/vanachuppstudio.com\/products\/custom-digital-silhouette\" target=\"_blank\" title=\"https:\/\/vanachuppstudio.com\/products\/custom-digital-silhouette\"><strong>Custom Digital Silhouette <\/strong><\/a>before you order. This is a great way to make sure your custom silhouette is on file when you or a loved one is ready to order. Husbands love this option as it takes the guess work out of the process! Need help taking your little ones' photos? We can help with this too! <a href=\"https:\/\/vanachuppstudio.com\/pages\/now-offering-virtual-appointments\" target=\"_blank\" title=\"Book a Virtual Photo Session \"><strong>Book a Virtual Photo Session with us now!<\/strong><\/a> The process is quick and easy and takes place on a Zoom call.<\/p><p>In the event that your order came through without any photos attached, we will reach out to you with instructions on how to submit photos via email. Photos can be emailed to us even after you've submitted your order.<\/p>"
+      }
+    },
+    "7b2f21d1-ee7d-4947-b1fd-7f4f9f8e4378": {
+      "type": "text-columns",
+      "blocks": {
+        "template--19514759708969__7b2f21d1-ee7d-4947-b1fd-7f4f9f8e4378-1687447734d2a4359a-0": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/1_x425_968f6e28-c5bd-44d0-89a4-e3f6d5a3eee4.webp",
+            "title": "1. Snap your photo",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "70b33458-24c1-4766-a679-711190def649": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/2_9bae9c77-6038-4e16-94be-49fbf50180c9.png",
+            "title": "2. We draw your silhouette",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "9ab03270-77b8-40f6-8a67-c24487a5032d": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/3_x425_6f3cad06-cc32-491b-bccd-f5a7804926c2.webp",
+            "title": "3. You receive and treasure your heirloom",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19514759708969__7b2f21d1-ee7d-4947-b1fd-7f4f9f8e4378-1687447734d2a4359a-0",
+        "70b33458-24c1-4766-a679-711190def649",
+        "9ab03270-77b8-40f6-8a67-c24487a5032d"
+      ],
+      "custom_css": [
+        "h3 {font-size: 18px;}",
+        "@media (width < 768px) {h3 {font-size: 16px; }}"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "block-spacing": false,
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": true,
+        "width": 3,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "mobile-width": "2",
+        "text-alignment": "center",
+        "heading": "",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "19518a3c-8671-4299-9523-fe7966eedc83": {
+      "type": "custom-content",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_html": "<div>\n<h2 style=\"color: #98acc9;\">Before &amp; After<\/h2>\n<br>\n<img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0754\/6053\/files\/Untitled_design_3_930x.png?v=1630632372\" alt=\"\">\n<\/div>",
+        "background-color": "none",
+        "container-width": 4,
+        "light-text": false,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "73071240-2781-4a89-985c-231534503061": {
+      "type": "custom-content",
+      "custom_css": [
+        ".wrapper-container {display: flex; gap: 50px;}",
+        ".wrapper-column {display: flex; flex-direction: column; width: 50%;}",
+        "@media (max-width: 768px) {.wrapper-column {width: 100%; } .wrapper-container {flex-direction: column; gap: 0px; }}"
+      ],
+      "settings": {
+        "custom_html": "<div>\n<h2 style=\"color: #98acc9;\">Photo Tips For Perfect Silhouettes<\/h2>\n<br>\n<div class=\"wrapper-container\">\n<div class=\"wrapper-column\">\n<ul>\n<li>Place subject in front of a well-lit background, facing either left or right.<\/li>\n<li>Only one side of the face must show on the photo and entire head should be in the photo.<\/li>\n<li>A relaxed face helps to show the features (eyelashes, nose, lips) more realistically although smiling faces are cute too. It's up to you how you want to photograph them.<\/li>\n<li>Pictures taken with a phone camera work too. Just make sure to take the photos in good lighting, during the daytime is preferred.<\/li>\n<li>If photographing more than one person, take individual pictures.<\/li>\n<\/ul>\n<\/div>\n<div class=\"wrapper-column\">\n<ul>\n<li>Remember to take the picture straight at eye level with the person you are photographing, standing about 2-4 feet away.<\/li>\n<li>If person has long hair (past the shoulder line) put it up. Ponytails, braids, messy buns really do make for cute silhouettes and add character to the final silhouette.<\/li>\n<li>For full body silhouettes, take a picture of the people standing, walking away or towards the camera. This works well when photographing siblings.<\/li>\n<li>When photographing babies, try taking the picture when they are asleep. Hold the camera directly above their face, with only one side of the face showing.<\/li>\n<\/ul>\n<\/div>\n<\/div>\n<\/div>",
+        "background-color": "none",
+        "container-width": 4,
+        "light-text": false,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "30ac4877-8c0d-407c-86ac-a7d6ceeaca27": {
+      "type": "custom-content",
+      "custom_css": [
+        "p {font-size: 1.25rem; line-height: 32px;}",
+        ".wrapper-container {display: flex; gap: 50px;}",
+        ".wrapper-column {display: flex; flex-direction: column; width: 50%;}",
+        "@media (max-width: 768px) {.wrapper-column {width: 100%; } .wrapper-container {flex-direction: column; gap: 20px; }}"
+      ],
+      "settings": {
+        "custom_html": "<div>\n<h2 style=\"color: #98acc9;\">Proofing &amp; Turnaround Time<\/h2>\n<br>\n<div class=\"wrapper-container\">\n<div class=\"wrapper-column\">\n<p>A digital proof will be sent via email in 7-10 business days (14 business days during busy holiday season). Please make any desired adjustments at this time. One final proof will be emailed and, once approved, we begin to process, create, and ship your order. Please allow 3-4 weeks for all custom orders to arrive after they have been approved.<\/p>\n<\/div>\n<div class=\"wrapper-column\">\n<p style=\"color: #98acc9; font-style: italic;\">If you need an item in a hurry, or want to make sure it will reach you by a certain date, please contact us at (<a href=\"mailto:orders@vanachuppstudio.com\" style=\"color: #98acc9;\">orders@vanachuppstudio.com<\/a>) and we will do our best to answer any questions and accommodate your request. Additional fees may apply for expedited production and\/or express shipping.<\/p>\n<\/div>\n<\/div>\n<\/div>",
+        "background-color": "none",
+        "container-width": 4,
+        "light-text": false,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fdbd9ca0-9d71-4ede-832d-06bd1fb6a31e",
+    "169bf9af-6600-4f69-b23c-4c7846a39930",
+    "ee468aab-39f4-4939-ae03-658e79f5a49c",
+    "7b2f21d1-ee7d-4947-b1fd-7f4f9f8e4378",
+    "19518a3c-8671-4299-9523-fe7966eedc83",
+    "73071240-2781-4a89-985c-231534503061",
+    "30ac4877-8c0d-407c-86ac-a7d6ceeaca27"
+  ]
+}
