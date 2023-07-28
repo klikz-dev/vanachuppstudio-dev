@@ -49,8 +49,7 @@
   data-spacing-above="{{ spacing_above }}"
   data-spacing-below="{{ spacing_below }}"
   data-text-alignment="{{ text_alignment }}"
-  data-text-position="bottom"
->
+  data-text-position="bottom">
   {%- if header_text_exists -%}
     <div class="featured-grid--header" data-container="block">
       {%- if heading != blank -%}
@@ -68,13 +67,24 @@
   {%- endif -%}
 
   <div class="featured-grid--body">
+    {%- liquid
+      if section.settings.thumbnail-type == "image"
+        assign show_image = true
+      else
+        assign show_image = false
+      endif
+    -%}
+
+    {% if section.settings.show-strikethrough %}
+      <div class="featured-grid-strikethrough"></div>
+    {% endif %}
+
     <div
       class="featured-grid--body--container"
       data-container="panel"
       data-columns="{{ width }}"
       data-mobile-columns="{{ mobile_width }}"
-      data-block-spacing="{{ block_spacing }}"
-    >
+      data-block-spacing="{{ block_spacing }}">
       {%- for block in section.blocks -%}
         {%- liquid
           assign block_link_url = block.settings.link-url
@@ -82,9 +92,7 @@
           assign description = block.settings.description
           assign image = block.settings.image
           assign link_wrapper = false
-          assign show_image = block.settings.show-image
           assign title = block.settings.title
-
           if block_link_text == blank and block_link_url != blank and description == blank
             assign link_wrapper = true
           endif
@@ -93,73 +101,75 @@
         <div
           class="featured-grid--item"
           data-image-enabled="{{ show_image }}"
-          {{ block.shopify_attributes }}
-        >
+          {{ block.shopify_attributes }}>
           {%- if link_wrapper -%}
             <a
               class="featured-grid--item--link-wrapper"
               href="{{ block_link_url }}"
               {%- if title != blank -%}
-                aria-label="{{ title }}"
+              aria-label="{{ title }}"
               {%- elsif heading != blank -%}
-                aria-label="{{ heading }}"
+              aria-label="{{ heading }}"
               {%- else -%}
-                aria-label="{{ image.alt }}"
-              {%- endif -%}
-            >
-          {%- endif -%}
+              aria-label="{{ image.alt }}"
+              {%- endif -%}>
+            {%- endif -%}
 
-          <div class="featured-grid--item--container">
-            {%- if show_image -%}
-              <div
-                class="featured-grid--item--image"
-                data-item="image"
-                {%- if image_width != 0 -%}
+            <div class="featured-grid--item--container">
+              {%- if show_image -%}
+                <div
+                  class="featured-grid--item--image"
+                  data-item="image"
+                  {%- if image_width != 0 -%}
                   style="max-width:{{ image_width }}px;"
-                {%- endif -%}
-              >
-                {%- liquid
+                  {%- endif -%}>
+                  {%- liquid
                   if image
                     render "image", image: image
                   else
                     render "placeholder", type: "image"
                   endif
                 -%}
-              </div>
-            {%- endif -%}
-
-            {%- if title != blank or description != blank or block_link_text != blank -%}
-              <div class="featured-grid--item--text-container">
-                {%- if title != blank -%}
-                  <h3 class="featured-grid--item--title" data-item="block-heading">
-                    {{- title | escape -}}
-                  </h3>
-                {%- endif -%}
-
-                {%- if description != blank -%}
-                  <div class="featured-grid--item--description" data-item="rte-content">
-                    {{- description -}}
+                </div>
+              {% else %}
+                <div class="featured-grid--item--number-wrap" style="width:{{ image_width }}px; height: {{ image_width }}px;">
+                  <div class="featured-grid--item--number">
+                    <h4 style="font-size: {{ image_width | divided_by: 2  }}px;">{{ forloop.index }}</h4>
                   </div>
-                {%- endif -%}
+                </div>
+              {%- endif -%}
 
-                {%- if block_link_text != blank -%}
-                  <div class="featured-grid--item--link" data-item="block-link">
-                    <a
-                      class="featured-grid--item--link-container"
-                      {% if block_link_url != blank %}
+              {%- if title != blank or description != blank or block_link_text != blank -%}
+                <div class="featured-grid--item--text-container">
+                  {%- if title != blank -%}
+                    <h3 class="featured-grid--item--title" data-item="block-heading">
+                      {{- title | escape -}}
+                    </h3>
+                  {%- endif -%}
+
+                  {%- if description != blank -%}
+                    <div class="featured-grid--item--description" data-item="rte-content">
+                      {{- description -}}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if block_link_text != blank -%}
+                    <div class="featured-grid--item--link" data-item="block-link">
+                      <a
+                        class="featured-grid--item--link-container"
+                        {% if block_link_url != blank %}
                         href="{{ block_link_url }}"
-                      {% endif %}
-                    >
-                      {{- block_link_text -}}
-                    </a>
-                  </div>
-                {%- endif -%}
-              </div>
-            {%- endif -%}
+                        {% endif %}>
+                        {{- block_link_text -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
 
             </div>
 
-          {%- if link_wrapper -%}
+            {%- if link_wrapper -%}
             </a>
           {%- endif -%}
         </div>
@@ -174,8 +184,7 @@
         <a
           class="featured-grid--footer--button"
           data-item="button"
-          href="{{ link_url }}"
-        >
+          href="{{ link_url }}">
           <div class="featured-grid--footer--button-container">
             {{- link_text -}}
           </div>
@@ -186,196 +195,225 @@
 </div>
 
 {% schema %}
-{
-  "name": "Text columns with images",
-  "settings": [
-    {
-      "type": "header",
-      "content": "Layout and Color"
-    },
-    {
-      "id": "background-color",
-      "label": "Background color",
-      "type": "select",
-      "options": [
-        { "label": "None", "value": "none" },
-        { "label": "Light", "value": "light" },
-        { "label": "Dark", "value": "dark" },
-        { "label": "Accent 1", "value": "accent-1" },
-        { "label": "Accent 2", "value": "accent-2" }
-      ],
-      "default": "none"
-    },
-    {
-      "id": "light-text",
-      "label": "Use light text color",
-      "type": "checkbox",
-      "default": false
-    },
-    {
-      "id": "block-spacing",
-      "label": "Show spacing between blocks",
-      "type": "checkbox",
-      "default": true
-    },
-    {
-      "id": "container-width",
-      "label": "Maximum width of container",
-      "type": "range",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 4
-    },
-    {
-      "id": "spacing-above",
-      "label": "Spacing above",
-      "type": "checkbox",
-      "default": true
-    },
-    {
-      "id": "spacing-below",
-      "label": "Spacing below",
-      "type": "checkbox",
-      "default": true
-    },
-    {
-      "id": "width",
-      "label": "Blocks per row",
-      "type": "range",
-      "min": 2,
-      "max": 6,
-      "step": 1,
-      "default": 4
-    },
-    {
-      "id": "aspect-ratio",
-      "label": "Image size",
-      "type": "select",
-      "options": [
-        { "label": "Natural", "value": "natural" },
-        { "label": "Square (1:1)", "value": "square" },
-        { "label": "Landscape (4:3)", "value": "landscape" },
-        { "label": "Portrait (2:3)", "value": "portrait" }
-      ],
-      "default": "square"
-    },
-    {
-      "id": "image-width",
-      "label": "Image width",
-      "type": "range",
-      "min": 0,
-      "max": 200,
-      "step": 10,
-      "default": 0,
-      "info": "Set to 0 for auto sizing"
-    },
-    {
-      "id": "mobile-width",
-      "label": "Blocks per row for small devices",
-      "type": "radio",
-      "options": [
-        { "value": "1", "label": "1" },
-        { "value": "2", "label": "2" }
-      ],
-      "default": "2"
-    },
-    {
-      "id": "text-alignment",
-      "label": "Text alignment",
-      "type": "select",
-      "options": [
-        { "value": "left", "label": "Left" },
-        { "value": "center", "label": "Center" }
-      ],
-      "default": "center"
-    },
-    {
-      "type": "header",
-      "content": "Content"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Text columns with images"
-    },
-    {
-      "type": "textarea",
-      "id": "subtitle",
-      "label": "Subheading"
-    },
-    {
-      "type": "url",
-      "id": "link-url",
-      "label": "Link"
-    },
-    {
-      "type": "text",
-      "id": "link-text",
-      "label": "Link text"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "image",
-      "name": "Column",
-      "settings": [
-        {
-          "id": "show-image",
-          "label": "Show image",
-          "type": "checkbox",
-          "default": true
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Add a title or tagline"
-        },
-        {
-          "type": "richtext",
-          "id": "description",
-          "label": "Description",
-          "default": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>"
-        },
-        {
-          "type": "url",
-          "id": "link-url",
-          "label": "Link"
-        },
-        {
-          "id": "link-text",
-          "label": "Link text",
-          "type": "text",
-          "default": "View more"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Text columns with images",
-      "blocks": [
-        {
-          "type": "image"
-        },
-        {
-          "type": "image"
-        },
-        {
-          "type": "image"
-        },
-        {
-          "type": "image"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Text columns with images",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout and Color"
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "None",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          }, {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "block-spacing",
+        "label": "Show spacing between blocks",
+        "type": "checkbox",
+        "default": true
+      }, {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "range",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      }, {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      }, {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      }, {
+        "id": "width",
+        "label": "Blocks per row",
+        "type": "range",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "default": 4
+      }, {
+        "id": "aspect-ratio",
+        "label": "Image size",
+        "type": "select",
+        "options": [
+          {
+            "label": "Natural",
+            "value": "natural"
+          }, {
+            "label": "Square (1:1)",
+            "value": "square"
+          }, {
+            "label": "Landscape (4:3)",
+            "value": "landscape"
+          }, {
+            "label": "Portrait (2:3)",
+            "value": "portrait"
+          }
+        ],
+        "default": "square"
+      }, {
+        "id": "thumbnail-type",
+        "label": "Thumbnail Type",
+        "type": "select",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          }, {
+            "value": "number",
+            "label": "Number"
+          }
+        ],
+        "default": "number"
+      }, {
+        "id": "image-width",
+        "label": "Image width",
+        "type": "range",
+        "min": 0,
+        "max": 200,
+        "step": 10,
+        "default": 0,
+        "info": "Set to 0 for auto sizing"
+      }, {
+        "id": "mobile-width",
+        "label": "Blocks per row for small devices",
+        "type": "radio",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          }, {
+            "value": "2",
+            "label": "2"
+          }
+        ],
+        "default": "2"
+      }, {
+        "id": "text-alignment",
+        "label": "Text alignment",
+        "type": "select",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }
+        ],
+        "default": "center"
+      }, {
+        "type": "header",
+        "content": "Content"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Text columns with images"
+      }, {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Subheading"
+      }, {
+        "type": "url",
+        "id": "link-url",
+        "label": "Link"
+      }, {
+        "type": "text",
+        "id": "link-text",
+        "label": "Link text"
+      }, {
+        "type": "checkbox",
+        "id": "show-strikethrough",
+        "label": "Show StrikeThrough",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Add a title or tagline"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>"
+          },
+          {
+            "type": "url",
+            "id": "link-url",
+            "label": "Link"
+          }, {
+            "id": "link-text",
+            "label": "Link text",
+            "type": "text",
+            "default": "View more"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text columns with images",
+        "blocks": [
+          {
+            "type": "column"
+          }, {
+            "type": "column"
+          }, {
+            "type": "column"
+          }, {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}

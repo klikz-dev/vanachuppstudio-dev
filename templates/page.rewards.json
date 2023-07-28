@@ -44,30 +44,27 @@
     "e5f18c91-d81f-4628-82fa-bcf81c0e2e04": {
       "type": "text-columns",
       "blocks": {
-        "template--19536881582377__e5f18c91-d81f-4628-82fa-bcf81c0e2e04-168763604213129acb-0": {
-          "type": "image",
+        "4157db35-38de-49b5-98d6-fefcf4f50bd3": {
+          "type": "column",
           "settings": {
-            "show-image": true,
             "title": "Join Now",
             "description": "<p>Create an account and start earning<\/p>",
             "link-url": "",
             "link-text": ""
           }
         },
-        "template--19536881582377__e5f18c91-d81f-4628-82fa-bcf81c0e2e04-168763604213129acb-1": {
-          "type": "image",
+        "f2d5c603-6354-4bcc-94f9-345e5d2b8cf8": {
+          "type": "column",
           "settings": {
-            "show-image": true,
             "title": "Earn Points",
             "description": "<p>Earn VCS points every time you shop<\/p>",
             "link-url": "",
             "link-text": ""
           }
         },
-        "template--19536881582377__e5f18c91-d81f-4628-82fa-bcf81c0e2e04-168763604213129acb-2": {
-          "type": "image",
+        "7b4aa530-9dc8-41af-96e1-1f08655d1980": {
+          "type": "column",
           "settings": {
-            "show-image": true,
             "title": "Redeem Points",
             "description": "<p>Redeem points towards future purchases<\/p>",
             "link-url": "",
@@ -76,9 +73,9 @@
         }
       },
       "block_order": [
-        "template--19536881582377__e5f18c91-d81f-4628-82fa-bcf81c0e2e04-168763604213129acb-0",
-        "template--19536881582377__e5f18c91-d81f-4628-82fa-bcf81c0e2e04-168763604213129acb-1",
-        "template--19536881582377__e5f18c91-d81f-4628-82fa-bcf81c0e2e04-168763604213129acb-2"
+        "4157db35-38de-49b5-98d6-fefcf4f50bd3",
+        "f2d5c603-6354-4bcc-94f9-345e5d2b8cf8",
+        "7b4aa530-9dc8-41af-96e1-1f08655d1980"
       ],
       "settings": {
         "background-color": "none",
@@ -88,14 +85,16 @@
         "spacing-above": true,
         "spacing-below": true,
         "width": 3,
-        "aspect-ratio": "natural",
-        "image-width": 90,
+        "aspect-ratio": "square",
+        "thumbnail-type": "number",
+        "image-width": 120,
         "mobile-width": "2",
         "text-alignment": "center",
         "heading": "How It Works",
         "subtitle": "",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "show-strikethrough": true
       }
     },
     "444e0be3-672a-4878-87da-359fc0ac3a63": {
@@ -131,32 +130,6 @@
     },
     "6c9eb712-d45c-4ee7-a331-636e210ec7b7": {
       "type": "text-columns",
-      "blocks": {
-        "template--19536881582377__6c9eb712-d45c-4ee7-a331-636e210ec7b7-1687667787162b3330-0": {
-          "type": "image",
-          "settings": {
-            "show-image": false,
-            "title": "REFER A FRIEND",
-            "description": "<p>Share your love for VCS: Give your friends $25 off on their first order of $150+ and get $25 for each successful referral.<\/p>",
-            "link-url": "",
-            "link-text": "Refer a Friend"
-          }
-        },
-        "55b771e6-9007-433b-aa54-1033aa5c630d": {
-          "type": "image",
-          "settings": {
-            "show-image": false,
-            "title": "REDEEM FOR DISCOUNTS",
-            "description": "<p>Redeeming your earned points is easy, simply apply your points balance to your cart.<\/p><p><strong>500 points = $25<\/strong><\/p>",
-            "link-url": "",
-            "link-text": "Shop now to redeem"
-          }
-        }
-      },
-      "block_order": [
-        "template--19536881582377__6c9eb712-d45c-4ee7-a331-636e210ec7b7-1687667787162b3330-0",
-        "55b771e6-9007-433b-aa54-1033aa5c630d"
-      ],
       "settings": {
         "background-color": "none",
         "light-text": false,
@@ -166,13 +139,15 @@
         "spacing-below": true,
         "width": 2,
         "aspect-ratio": "square",
+        "thumbnail-type": "number",
         "image-width": 30,
         "mobile-width": "1",
         "text-alignment": "center",
         "heading": "",
         "subtitle": "",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "show-strikethrough": false
       }
     },
     "78b49b45-f3dc-456d-b7b2-4e2ac061b6c7": {
