@@ -8,7 +8,7 @@
 
 <div class="image-with-text--root" data-section-id="{{ section.id }}">
   {%-
-    render 'featured-content',
+      render 'featured-content',
     text_color: section.settings.text-color,
     bg_color: section.settings.background-color,
     box_around_text: section.settings.box-around-text,
@@ -21,6 +21,10 @@
     mobile_image_aspect_ratio: mobile_aspect_ratio,
     link_text: section.settings.link-text,
     link_url: section.settings.link-url,
+    cta1_text: section.settings.cta1_text,
+    cta1_link: section.settings.cta1_link,
+    cta2_text: section.settings.cta2_text,
+    cta2_link: section.settings.cta2_link,
     mobile_overlay: section.settings.mobile-overlay,
     overlap: section.settings.overlap,
     overline: section.settings.overline,
@@ -231,6 +235,22 @@
         "id": "link-text",
         "label": "Link text ",
         "type": "text"
+      }, {
+        "id": "cta1_text",
+        "label": "CTA 1 Text",
+        "type": "text"
+      }, {
+        "id": "cta1_link",
+        "label": "CTA 1 Link",
+        "type": "url"
+      }, {
+        "id": "cta2_text",
+        "label": "CTA 2 Text",
+        "type": "text"
+      }, {
+        "id": "cta2_link",
+        "label": "CTA 2 Link",
+        "type": "url"
       }
     ],
     "presets": [

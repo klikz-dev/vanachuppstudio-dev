@@ -34,7 +34,11 @@
         "title": "VCS REWARDS PROGRAM",
         "description": "<p>As a rewards member, you’ll earn points and exclusive rewards every time you shop.<\/p>",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1_text": "Join Now",
+        "cta1_link": "\/account\/register",
+        "cta2_text": "Sign In",
+        "cta2_link": "\/account\/login"
       }
     },
     "e5f18c91-d81f-4628-82fa-bcf81c0e2e04": {
@@ -118,7 +122,11 @@
         "title": "HOW TO EARN POINTS",
         "description": "<h3>100 Points<\/h3><p>Create an acount<\/p><h3>1 Point<\/h3><p>per $1 spent<\/p><h3>200 Points<\/h3><p>Birthday Bonus<\/p><h3>150 Points<\/h3><p>Newsletter Sign Up<\/p><h3>50 Points<\/h3><p>Leave a product review<\/p>",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1_text": "",
+        "cta1_link": "",
+        "cta2_text": "",
+        "cta2_link": ""
       }
     },
     "6c9eb712-d45c-4ee7-a331-636e210ec7b7": {

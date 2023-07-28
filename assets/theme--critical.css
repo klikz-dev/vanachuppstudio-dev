@@ -229,6 +229,9 @@ body[data-assets-loaded='true'] .popup-modal-close {
   display: block;
   flex-basis: 100%;
 }
+[data-position='center'] {
+  justify-content: center;
+}
 [data-section-id] {
   padding: var(--spacing--section);
 }

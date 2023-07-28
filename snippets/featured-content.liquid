@@ -76,87 +76,100 @@
   data-text-width="{{ text_width }}"
   data-placeholder-image="{{ show_placeholder_image }}"
   {%- unless image and promo_width -%}
-    data-background-color="{{ bg_color }}"
+  data-background-color="{{ bg_color }}"
   {%- endunless -%}
   {%- if attributes -%}
-    {{- attributes -}}
-  {%- endif -%}
->
+  {{- attributes -}}
+  {%- endif -%}>
   {%- if cover_link -%}
     <a
       class="featured-content--cover-link"
       href="{{ link_url }}"
       {%- if title != blank -%}
-        aria-label="{{ title }}"
+      aria-label="{{ title }}"
       {%- else -%}
-        aria-label="{{ image.alt }}"
-      {%- endif -%}
-    >
-  {%- endif -%}
+      aria-label="{{ image.alt }}"
+      {%- endif -%}>
+    {%- endif -%}
 
-  {% comment %}Add bg color here as well so that you can set the outer div to transparent for
-  container width 5 and left and right positions {% endcomment %}
-  <div
-    class="featured-content--container"
-    {%- unless image and promo_width -%}
+    {% comment %}Add bg color here as well so that you can set the outer div to transparent for
+    container width 5 and left and right positions {% endcomment %}
+    <div
+      class="featured-content--container"
+      {%- unless image and promo_width -%}
       data-background-color="{{ bg_color }}"
-    {%- endunless -%}
-    style="--featured-content--aspect-ratio:{{ image_aspect_ratio }};--featured-content--mobile-aspect-ratio:{{ mobile_image_aspect_ratio }};"
-  >
-    <div class="featured-content--image">
-      {%- liquid
+      {%- endunless -%}
+      style="--featured-content--aspect-ratio:{{ image_aspect_ratio }};--featured-content--mobile-aspect-ratio:{{ mobile_image_aspect_ratio }};">
+      <div class="featured-content--image">
+        {%- liquid
         if image
           render "image", image: image, mobile_image: mobile_image, parallax: parallax_enabled, aspect_ratio: image_aspect_ratio, mobile_aspect_ratio: mobile_image_aspect_ratio, darken: darken_image, darken_mobile: darken_image_mobile
         elsif show_placeholder_image
           render "placeholder", type: "lifestyle", aspect_ratio: image_aspect_ratio, mobile_aspect_ratio: mobile_image_aspect_ratio, placeholder_index: 2, darken: darken_image, darken_mobile: darken_image_mobile
         endif
       -%}
+      </div>
+
+      {%- if text_exists -%}
+        <div class="featured-content--text">
+          <div class="featured-content--text-container">
+            {%- if overline != blank -%}
+              <h2 class="featured-content--overline" data-item="overline">
+                {{- overline | escape -}}
+              </h2>
+            {%- endif -%}
+
+            {%- if title != blank -%}
+              <h3 class="featured-content--title" data-item="{{ heading_type }} {{ mobile_heading_type }}">
+                {{- title | escape -}}
+              </h3>
+            {%- endif -%}
+
+            {%- if description != blank -%}
+              <div class="featured-content--description" data-item="rte-content">
+                {{- description -}}
+              </div>
+            {%- endif -%}
+
+            {%- if link_text != blank -%}
+              <div class="featured-content--link" data-item="block-link">
+                {%- if cover_link -%}
+                  <div class="featured-content--link--container">
+                    {{- link_text -}}
+                  </div>
+                {%- else -%}
+                  <a class="featured-content--link--container" href="{{ link_url }}">
+                    {{- link_text -}}
+                  </a>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            {%- if cta1_text != blank or cta2_text != blank -%}
+              <div
+                class="featured-content--ctas"
+                data-container="block"
+                data-position="center">
+                {%- if cta1_text != blank -%}
+                  <a data-item="button" href="{{ cta1_link }}">
+                    <div>{{- cta1_text -}}</div>
+                  </a>
+                {%- endif -%}
+
+                {%- if cta2_text != blank -%}
+                  <a data-item="button" href="{{ cta2_link }}">
+                    <div>{{- cta2_text -}}</div>
+                  </a>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+
     </div>
 
-    {%- if text_exists -%}
-      <div class="featured-content--text">
-        <div class="featured-content--text-container">
-          {%- if overline != blank -%}
-            <h2 class="featured-content--overline" data-item="overline">
-              {{- overline | escape -}}
-            </h2>
-          {%- endif -%}
-
-          {%- if title != blank -%}
-            <h3
-              class="featured-content--title"
-              data-item="{{ heading_type }} {{ mobile_heading_type }}"
-            >
-              {{- title | escape -}}
-            </h3>
-          {%- endif -%}
-
-          {%- if description != blank -%}
-            <div class="featured-content--description" data-item="rte-content">
-              {{- description -}}
-            </div>
-          {%- endif -%}
-
-          {%- if link_text != blank -%}
-            <div class="featured-content--link" data-item="block-link">
-              {%- if cover_link -%}
-                <div class="featured-content--link--container">
-                  {{- link_text -}}
-                </div>
-              {%- else -%}
-                <a class="featured-content--link--container" href="{{ link_url }}">
-                  {{- link_text -}}
-                </a>
-              {%- endif -%}
-            </div>
-          {%- endif -%}
-        </div>
-      </div>
-    {%- endif -%}
-
-  </div>
-
-  {%- if cover_link -%}
+    {%- if cover_link -%}
     </a>
   {%- endif -%}
 </div>
