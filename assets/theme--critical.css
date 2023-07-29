@@ -974,7 +974,7 @@ input[type='submit'] {
   color: var(--color--button);
   border-radius: 2px;
   font-family: var(--font--accent--family);
-  font-weight: var(--font--accent--weight);
+  font-weight: 600;
   font-style: var(--font--accent--style);
   text-transform: uppercase;
   font-size: var(--font--accent--size);
@@ -1002,6 +1002,7 @@ input[type='submit']:link,
 input[type='submit']:visited {
   color: var(--color--button);
   background: var(--bg-color--button);
+  font-weight: 600;
 }
 [data-item='inverted-button'] > * {
   background: var(--bg-color--button);
