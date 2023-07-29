@@ -49,3 +49,12 @@
   text-align: center;
   margin: 12px 0;
 }
+
+.featured-columns--description[data-padding='true'] {
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}

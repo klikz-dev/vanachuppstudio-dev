@@ -4,55 +4,111 @@
       "type": "image-with-text",
       "settings": {
         "text-color": "auto",
-        "background-color": "none",
-        "container-width": 3,
+        "background-color": "accent-1",
+        "container-width": 6,
         "spacing-above": false,
-        "spacing-below": true,
-        "image-aspect-ratio": 110,
-        "mobile-image-aspect-ratio": 134,
+        "spacing-below": false,
+        "image-aspect-ratio": 80,
+        "mobile-image-aspect-ratio": 100,
         "darken-image": false,
         "parallax-enabled": false,
         "text-position": "left",
-        "text-width": "medium",
+        "text-width": "full",
         "overlap": false,
         "box-around-text": false,
-        "mobile-overlay": true,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/The_Evolution_of_VCS.jpg",
         "overline": "",
         "title": "The Evolution of VCS",
         "description": "<p>We launched in 2008 as Le Papier Studio, a small Etsy shop that expressed Vana’s love for paper silhouette art. That dream has since evolved into a business that serves our customers – a global community that shares Vana’s passion for signature heirloom pieces that also evoke their most treasured memories.<\/p><p>In 2021, we rebranded as Vana Chupp Studio to better reflect our evolution and to swing wide the door to usher in even more creative growth. But staying true to our roots, we remain a lifestyle brand committed to elegant, timeless design and fine artistry. Thank you for joining our community on this creative journey. Serving and getting to know you has been, and truly remains, a most wonderful gift.<\/p>",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
       }
     },
-    "d75f5229-443c-4253-8f96-8f7137c4bd50": {
-      "type": "custom-content",
-      "custom_css": [
-        ".logo {display: flex; justify-content: center; margin-bottom: -10px;}",
-        "img {width: 15%;}"
+    "70d5048c-7876-4635-9795-033d0723bb09": {
+      "type": "featured-columns",
+      "blocks": {
+        "6c7823a6-cd3c-4efa-b520-1b4e8762f72c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vana_Chupp_Primary_Black.png",
+            "image-description": ""
+          }
+        }
+      },
+      "block_order": [
+        "6c7823a6-cd3c-4efa-b520-1b4e8762f72c"
       ],
       "settings": {
-        "custom_html": "<div class=\"logo\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/6053\/files\/vana-chupp-circle-black_2x_300x_e8b15fc2-6ade-4e76-9a0d-d204175a5d6b.png?v=1687528332\">\n<\/div>",
-        "background-color": "accent-1",
-        "container-width": 4,
-        "light-text": false,
+        "background-color": "none",
+        "container-width": 1,
         "spacing-above": true,
-        "spacing-below": true
+        "spacing-below": false,
+        "title": "",
+        "subtitle": "",
+        "columns": 1,
+        "show-gap": false
       }
     },
     "16324732989269ca2c": {
       "type": "featured-text",
       "custom_css": [
-        ".featured-text--body {color: #f7f2ee; font-family: Montserrat; font-weight: 800px;}"
+
       ],
       "settings": {
-        "background-color": "accent-1",
+        "background-color": "none",
         "light-text": false,
-        "container-width": 4,
-        "spacing-above": false,
+        "container-width": 3,
+        "spacing-above": true,
         "spacing-below": true,
         "overline": "",
         "heading": "",
         "text": "<p>Vana Chupp Studio is a boutique lifestyle brand that transforms our customers’ most treasured people and moments captured in photographs into exquisite heirloom-quality jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.  <\/p><p>Taking your favorite photographs of family, pets or moments in time, we fashion those images into silhouette portraits and exquisite jewelry and personal accessories that are destined to become treasured heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces<br\/>perfectly evokes those forever memories.<\/p>"
+      }
+    },
+    "6ea67666-6b04-4e91-91d3-7e146650ea98": {
+      "type": "featured-columns",
+      "blocks": {
+        "template--20140905169214__6ea67666-6b04-4e91-91d3-7e146650ea98-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OUR_VALUES_1.jpg",
+            "image-description": ""
+          }
+        },
+        "90202d92-0a91-4c04-88b9-66c8cefba210": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>OUR VALUES<\/h2><p>We know from our own experiences that our little ones grow up entirely too quickly and the precious time we spend with them seems so fleeting. Our mission is to inspire parents to find the joy in even the most seemingly mundane moments, to mentally pause from the distractions and demands of our hectic world in order to live in the present, and to cherish the precious gift of time. These are the moments that write the most important chapters of your story – one that we feel profoundly honored to help illustrate through the heirloom pieces we individually craft for you.       <\/p>",
+            "padding": true
+          }
+        },
+        "0d50726e-9232-414a-a49e-351278202759": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OUR_VALUES_2.jpg",
+            "image-description": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20140905169214__6ea67666-6b04-4e91-91d3-7e146650ea98-image-1",
+        "90202d92-0a91-4c04-88b9-66c8cefba210",
+        "0d50726e-9232-414a-a49e-351278202759"
+      ],
+      "settings": {
+        "background-color": "accent-1",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "title": "",
+        "subtitle": "",
+        "columns": 3,
+        "show-gap": false
       }
     },
     "main": {
@@ -68,43 +124,6 @@
     },
     "65a1c8a7-4db6-4617-98b0-6503a5bdb790": {
       "type": "text-columns",
-      "blocks": {
-        "template--19399768965417__65a1c8a7-4db6-4617-98b0-6503a5bdb790-1688013536cdec5af5-0": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "title": "",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "template--19399768965417__65a1c8a7-4db6-4617-98b0-6503a5bdb790-1688013536cdec5af5-1": {
-          "type": "image",
-          "settings": {
-            "show-image": false,
-            "title": "OUR VALUES",
-            "description": "<p>We know from our own experiences that our little ones grow up entirely too quickly and the precious time we spend with them seems so fleeting. Our mission is to inspire parents to find the joy in even the most seemingly mundane moments, to mentally pause from the distractions and demands of our hectic world in order to live in the present, and to cherish the precious gift of time. These are the moments that write the most important chapters of your story – one that we feel profoundly honored to help illustrate through the heirloom pieces we individually craft for you.       <\/p>",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "template--19399768965417__65a1c8a7-4db6-4617-98b0-6503a5bdb790-1688013536cdec5af5-2": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "title": "",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19399768965417__65a1c8a7-4db6-4617-98b0-6503a5bdb790-1688013536cdec5af5-0",
-        "template--19399768965417__65a1c8a7-4db6-4617-98b0-6503a5bdb790-1688013536cdec5af5-1",
-        "template--19399768965417__65a1c8a7-4db6-4617-98b0-6503a5bdb790-1688013536cdec5af5-2"
-      ],
       "custom_css": [
         ".featured-grid--root {padding: 0;}",
         ".featured-grid--item--title {font-weight: bold; color: #98acc9;}",
@@ -119,219 +138,196 @@
         "spacing-below": true,
         "width": 3,
         "aspect-ratio": "square",
+        "thumbnail-type": "number",
         "image-width": 0,
         "mobile-width": "2",
         "text-alignment": "center",
         "heading": "",
         "subtitle": "",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "show-strikethrough": false
       }
     },
-    "2cd63412-4a31-4c46-a5a0-8e595d979fff": {
-      "type": "featured-text",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": false,
-        "overline": "",
-        "heading": "The Team",
-        "text": ""
-      }
-    },
-    "7e59fe97-856e-459b-9cbd-3659c92490bb": {
-      "type": "image-with-text",
-      "custom_css": [
-        ".featured-content--title {color: #98acc9;}"
+    "c9282268-38b4-4110-ac67-1cbe7117cf52": {
+      "type": "slideshow",
+      "blocks": {
+        "4773b585-2281-4860-a327-05b950bab3c4": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vana.jpg",
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>"
+          }
+        },
+        "c9642a61-8173-443b-83a7-4148745954a1": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Aaron.jpg",
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>"
+          }
+        },
+        "d9b82771-cd70-41b3-9b82-761da1f924af": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Evin.jpg",
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>"
+          }
+        },
+        "5932e81a-c12d-4f2c-a74f-bb87ca4977e6": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amy.jpg",
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>"
+          }
+        },
+        "5ab6060b-c323-4c2e-b6d2-02aeee2457bb": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bella.jpg",
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>"
+          }
+        },
+        "c57519dc-08cd-4104-9437-6a2c462d2653": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Monica.jpg",
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4773b585-2281-4860-a327-05b950bab3c4",
+        "c9642a61-8173-443b-83a7-4148745954a1",
+        "d9b82771-cd70-41b3-9b82-761da1f924af",
+        "5932e81a-c12d-4f2c-a74f-bb87ca4977e6",
+        "5ab6060b-c323-4c2e-b6d2-02aeee2457bb",
+        "c57519dc-08cd-4104-9437-6a2c462d2653"
       ],
       "settings": {
         "text-color": "auto",
         "background-color": "none",
-        "container-width": 6,
         "spacing-above": true,
-        "spacing-below": false,
-        "image-aspect-ratio": 92,
+        "spacing-below": true,
+        "spacing-around-blocks": true,
+        "image-aspect-ratio": 56,
+        "darken-image": true,
+        "blocks_per_slide": 3,
+        "box-around-text": false,
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
         "mobile-image-aspect-ratio": 134,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "center",
-        "text-width": "large",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "overline": "Founder + CEO",
-        "title": "Vana",
-        "description": "<p>Inspired by the sweet and simple moments in life, Vana is professionally trained as an architect with an artist's heart. Her silhouette craft was first born as she began documenting the personality, emotion, and playfulness of her son Nikolas. Over the years she has established herself as a leading, honest, authentic voice of women in business, the balance of work and family, and how to foster creativity in everyday life. Now, as a mama to two busy boys, wife to her college sweetheart and the visionary of a labor-of-love brand, she strives to make a difference in her clients' lives.<\/p>",
-        "link-url": "",
-        "link-text": ""
-      }
-    },
-    "bb12d6e8-c65f-4051-958d-3af37b6f5646": {
-      "type": "image-with-text",
-      "custom_css": [
-        ".featured-content--title {color: #98acc9;}"
-      ],
-      "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 3,
-        "spacing-above": true,
-        "spacing-below": false,
-        "image-aspect-ratio": 80,
-        "mobile-image-aspect-ratio": 92,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "right",
-        "text-width": "large",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "overline": "Director of Finance + Operations",
-        "title": "AARON",
-        "description": "<p>Aaron joined Vana Chupp Studio in Fall of 2021 as the Director of Finance + Operations but really has been our biggest cheerleader since our company's conception in 2008.<\/p><p>Aaron is an architect by trade with over 20 years of experience in the field of Architecture. His experience in managing teams and projects makes him a great asset to our company.<\/p>",
-        "link-url": "",
-        "link-text": ""
-      }
-    },
-    "28909e8f-9351-4dd2-b07a-52c18fb9ce1a": {
-      "type": "image-with-text",
-      "custom_css": [
-        ".featured-content--title {color: #98acc9;}"
-      ],
-      "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 3,
-        "spacing-above": true,
-        "spacing-below": false,
-        "image-aspect-ratio": 80,
-        "mobile-image-aspect-ratio": 134,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "left",
-        "text-width": "large",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "overline": "Head Jeweler",
-        "title": "AMY",
-        "description": "<p>Amy is a native of Richmond and started her jewelry career in 1993. She attended the New Approach School for Jewelers but continued to perfect her craft along the way.<\/p><p>Amy specializes in stone setting, wax carving and fabrication. She joined VCS in June of 2021.<\/p><p>She enjoys cooking in her outdoor kitchen and hanging out with her husband and their two Jack Russell terriers.<\/p>",
-        "link-url": "",
-        "link-text": ""
-      }
-    },
-    "cf1ff983-5e56-42ec-a1d4-c799e3e3894d": {
-      "type": "image-with-text",
-      "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 3,
-        "spacing-above": true,
-        "spacing-below": false,
-        "image-aspect-ratio": 86,
-        "mobile-image-aspect-ratio": 134,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "right",
-        "text-width": "medium",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "overline": "Studio Assistant",
-        "title": "BELLA",
-        "description": "<p>Bella is our newest team member! She is a Richmond native and is currently finishing up her senior year at the University of Richmond.<br\/><br\/>Growing up behind the counter at her parents’ local restaurant, she developed a passion for creativity and helping others. She joined our company in July of 2022 as a studio assistant and is enjoying helping our customers turn their treasured memories into special heirlooms.<\/p>",
-        "link-url": "",
-        "link-text": ""
-      }
-    },
-    "1d678325-13a3-472b-a139-810b9102331d": {
-      "type": "image-with-text",
-      "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 3,
-        "spacing-above": true,
-        "spacing-below": false,
-        "image-aspect-ratio": 80,
-        "mobile-image-aspect-ratio": 134,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "left",
-        "text-width": "medium",
-        "overlap": false,
-        "box-around-text": false,
+        "blocks_per_slide_mobile": "1",
         "mobile-overlay": false,
-        "overline": "Silhouette Artist",
-        "title": "EVIN",
-        "description": "<p>Evin graduated VCU with a Bachelor in Fine Arts in 2011, but has been working in graphic design for over 15 years. She is excited to be able to use her skills to help preserve your little ones ever changing features and precious memories. As a new mom to a little boy, she knows how important it is to capture those special, fleeting moments. When not working, she can be found outside gardening, or spending time at the barn with her other special boy.<br\/>Evin joined our team in the fall of 2020.<\/p>",
-        "link-url": "",
-        "link-text": ""
+        "title": "THE TEAM"
       }
     },
-    "d27de5c4-77ef-4af5-b19c-d171a378c8d7": {
-      "type": "image-with-text",
+    "83eb393e-9bb3-439f-901f-812cb728fb3f": {
+      "type": "slideshow",
+      "blocks": {
+        "223e6003-7531-4f72-81cf-6044cbb3db3e": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vana_and_John.jpg",
+            "name": "April 2017",
+            "role": "As her boys became more independent,Vana started devoting more timeto grow LPS.",
+            "description": ""
+          }
+        },
+        "6773a805-d566-4476-9cb9-01ac2241bd85": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LPS-TEAM-SHOOT.jpg",
+            "name": "April 2017",
+            "role": "As her boys became more independent,Vana started devoting more timeto grow LPS.",
+            "description": ""
+          }
+        },
+        "41f30e5a-1104-40d2-9db3-256f7964ba33": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vana-illustrating.jpg",
+            "name": "April 2017",
+            "role": "As her boys became more independent,Vana started devoting more timeto grow LPS.",
+            "description": ""
+          }
+        },
+        "f7a440e5-0a30-4a5a-9397-271396b515ec": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Home-Ornaments-from-2020---to-show-to-evolution.jpg",
+            "name": "April 2017",
+            "role": "As her boys became more independent,Vana started devoting more timeto grow LPS.",
+            "description": ""
+          }
+        },
+        "1ca2cc50-4085-45ad-a701-8fa862c86c25": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Home_Office_circa.jpg",
+            "name": "April 2017",
+            "role": "As her boys became more independent,Vana started devoting more timeto grow LPS.",
+            "description": ""
+          }
+        },
+        "f1e97b42-bfc5-433b-ae3a-ed9a1c35670d": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LPS_jewelry.jpg",
+            "name": "April 2017",
+            "role": "As her boys became more independent,Vana started devoting more timeto grow LPS.",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "223e6003-7531-4f72-81cf-6044cbb3db3e",
+        "6773a805-d566-4476-9cb9-01ac2241bd85",
+        "41f30e5a-1104-40d2-9db3-256f7964ba33",
+        "f7a440e5-0a30-4a5a-9397-271396b515ec",
+        "1ca2cc50-4085-45ad-a701-8fa862c86c25",
+        "f1e97b42-bfc5-433b-ae3a-ed9a1c35670d"
+      ],
       "settings": {
         "text-color": "auto",
         "background-color": "none",
-        "container-width": 3,
         "spacing-above": true,
-        "spacing-below": false,
-        "image-aspect-ratio": 90,
-        "mobile-image-aspect-ratio": 134,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "right",
-        "text-width": "medium",
-        "overlap": false,
+        "spacing-below": true,
+        "spacing-around-blocks": true,
+        "image-aspect-ratio": 56,
+        "darken-image": true,
+        "blocks_per_slide": 3,
         "box-around-text": false,
-        "mobile-overlay": true,
-        "overline": "Silhouette Artist",
-        "title": "MONICA",
-        "description": "<p>Monica is a Houston based graphic designer with a MFA in Digital Media Studies from the University of Houston. She has 15 years in graphic design and has focused the last 4 years in custom portrait silhouettes. As a mother of three young children, she understands that every wisp of hair and every eyelash matter! When she is not capturing those sweet little portraits, Monica can be found outside with her kiddos playing and enjoying the Texas sunshine. Often times she and the kids sneak off to the family ranch to help out with her parent's vineyard. Monica joined our team in fall of 2020.<\/p>",
-        "link-url": "",
-        "link-text": ""
-      }
-    },
-    "5492ae8a-feb9-4d58-9100-2cd5899e3b25": {
-      "type": "featured-text",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": false,
-        "overline": "",
-        "heading": "Our Story",
-        "text": ""
-      }
-    },
-    "1687619795000588fd": {
-      "type": "apps",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": false,
-        "spacing-below": true
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": false,
+        "title": "OUR STORY"
       }
     }
   },
   "order": [
     "16324732604d3e7054",
-    "d75f5229-443c-4253-8f96-8f7137c4bd50",
+    "70d5048c-7876-4635-9795-033d0723bb09",
     "16324732989269ca2c",
+    "6ea67666-6b04-4e91-91d3-7e146650ea98",
     "main",
     "65a1c8a7-4db6-4617-98b0-6503a5bdb790",
-    "2cd63412-4a31-4c46-a5a0-8e595d979fff",
-    "7e59fe97-856e-459b-9cbd-3659c92490bb",
-    "bb12d6e8-c65f-4051-958d-3af37b6f5646",
-    "28909e8f-9351-4dd2-b07a-52c18fb9ce1a",
-    "cf1ff983-5e56-42ec-a1d4-c799e3e3894d",
-    "1d678325-13a3-472b-a139-810b9102331d",
-    "d27de5c4-77ef-4af5-b19c-d171a378c8d7",
-    "5492ae8a-feb9-4d58-9100-2cd5899e3b25",
-    "1687619795000588fd"
+    "c9282268-38b4-4110-ac67-1cbe7117cf52",
+    "83eb393e-9bb3-439f-901f-812cb728fb3f"
   ]
 }

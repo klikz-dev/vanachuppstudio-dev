@@ -1,0 +1,20 @@
+{%- liquid
+  render 'section-assets', name: 'featured-profile', type: 'style'
+-%}
+
+<div class="featured-profile--root">
+  <div class="featured-profile--image">
+    {%- liquid
+      if image
+        render "image", image: image
+      else
+        render "placeholder", type: "image"
+      endif
+    -%}
+  </div>
+
+  <div class="featured-profile--content">
+    <h5 class="featured-profile--name">{{ name }}</h5>
+    <p class="featured-profile--role">{{ role }}</p>
+  </div>
+</div>

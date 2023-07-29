@@ -43,9 +43,10 @@
           assign image = block.settings.image
           assign image_description = block.settings.image-description
           assign text = block.settings.text
+          assign padding = block.settings.padding
         -%}
 
-        <div class="featured-columns-item">
+        <div class="featured-columns-item" {% if type == "text" %}style="height: 100%;"{% endif %}>
           {% if type == "image" %}
             {%- liquid
               if image
@@ -55,12 +56,17 @@
               endif
             -%}
 
-            <div class="featured-columns--image-description">
-              <p>{{- image_description -}}</p>
-            </div>
+            {% if image_description != "" %}
+              <div class="featured-columns--image-description">
+                <p>{{ image_description }}</p>
+              </div>
+            {% endif %}
 
           {% elsif type == "text" %}
-            <div class="featured-columns--description" data-item="rte-content">
+            <div
+              class="featured-columns--description"
+              data-item="rte-content"
+              data-padding="{{ padding }}">
               {{- text -}}
             </div>
           {% endif %}
@@ -172,6 +178,11 @@
             "id": "text",
             "label": "Text",
             "default": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>"
+          }, {
+            "type": "checkbox",
+            "id": "padding",
+            "label": "Space around text",
+            "default": false
           }
         ]
       }
