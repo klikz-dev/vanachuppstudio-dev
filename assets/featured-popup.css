@@ -43,3 +43,7 @@
   margin-bottom: 20px;
   font-weight: 600;
 }
+
+.featured-popup--trigger {
+  text-decoration: underline;
+}
