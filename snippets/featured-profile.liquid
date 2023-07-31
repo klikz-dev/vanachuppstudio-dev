@@ -16,5 +16,12 @@
   <div class="featured-profile--content">
     <h5 class="featured-profile--name">{{ name }}</h5>
     <p class="featured-profile--role">{{ role }}</p>
+    {% if description %}
+      <p
+        class="featured-popup--trigger"
+        data-title="{{ name }}"
+        data-subtitle="{{ role }}"
+        data-text="{{ description }}">View More</p>
+    {% endif %}
   </div>
 </div>
