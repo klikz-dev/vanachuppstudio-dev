@@ -25,11 +25,18 @@
 
 .featured-popup--close {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 0;
+  right: 0;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color--button);
+  color: white;
 }
 
 .featured-popup--title {
@@ -45,5 +52,12 @@
 }
 
 .featured-popup--trigger {
-  text-decoration: underline;
+  display: inline-block;
+  border-bottom: 2px solid #efe7dd;
+  text-decoration: none;
+  margin: 12px;
+}
+
+.featured-popup--trigger:hover {
+  color: var(--bg-color--dark);
 }

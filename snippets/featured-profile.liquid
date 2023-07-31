@@ -16,7 +16,7 @@
   <div class="featured-profile--content">
     <h5 class="featured-profile--name">{{ name }}</h5>
     <p class="featured-profile--role">{{ role }}</p>
-    {% if description %}
+    {% if description != "" %}
       <p
         class="featured-popup--trigger"
         data-title="{{ name }}"
