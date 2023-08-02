@@ -22,13 +22,17 @@
         "title": "",
         "description": "",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
       }
     },
     "collection-header": {
       "type": "collection--header",
       "custom_css": [
-        "h1 {font-size: 3rem;}"
+        "h1 {font-size: 2rem;}"
       ],
       "settings": {
         "enable-header": true,

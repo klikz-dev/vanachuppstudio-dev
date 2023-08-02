@@ -25,11 +25,33 @@
         "title": "",
         "description": "",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "2b278f3a-44e7-489b-a362-8739cf852742": {
+      "type": "featured-text",
+      "custom_css": [
+        "p {font-family: Montserrat; font-size: 28px; font-weight: bold;}",
+        "@media only screen and (max-width: 767px) {p {font-size: 16px; }}"
+      ],
+      "settings": {
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": 2,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "",
+        "text": "<p>Vana Chupp Studio keeps memories close through <a href=\"\/collections\/silhouette-jewelry\" target=\"_blank\" title=\"Silhouette Jewelry\">customized silhouette<\/a> jewelry of the highest quality. <\/p><p>Your personal photos are transformed into long-lasting heirloom jewelry pieces that honor the people, pets, and special moments in your life.<\/p>"
       }
     },
     "75eaabc3-47b5-4757-8339-55b2192e3e6a": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         ".image-with-text--root {background: #98acc9;}",
         "a {color: #fff;}",
@@ -58,7 +80,11 @@
         "title": "",
         "description": "<p>Vana Chupp Studio keeps memories close through <a href=\"\/collections\/silhouette-jewelry\" target=\"_blank\" title=\"Silhouette Jewelry\">customized silhouette<\/a> jewelry of the highest quality. <\/p><p>Your personal photos are transformed into long-lasting heirloom jewelry pieces that honor the people, pets, and special moments in your life.<\/p>",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
       }
     },
     "featured-collection-grid": {
@@ -111,11 +137,18 @@
         "title": "",
         "description": "<h1>Vana Chupp Studio<\/h1><p><em>is a boutique lifestyle brand that transforms our customers’ most treasured people and moments into exquisite heirloom jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.<\/em><\/p><h2>What We're Know For<\/h2><p>Taking your favorite photographs of family, pets, or moments in time, we fashion those images into silhouette portraits, exquisite silhouette jewelry, and personal accessories that become treasured family heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces perfectly evoke those forever memories.<\/p><h2>What We Believe<\/h2><p>We know from our own experiences that our little ones grow up entirely too quickly. Our mission is to inspire parents to find joy in even the most seemingly mundane moments, to mentally pause from the distractions and demands of our hectic world in order to live in the present, and to cherish the precious gift of time.<\/p>",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
       }
     },
     "aef4886b-098f-4b2f-8510-9f374eca1aa8": {
       "type": "featured-collections",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h3 {font-size: 16px; } .featured-collections--title {min-height: 55px; }}"
+      ],
       "settings": {
         "heading": "Our Collections",
         "collection-list": [
@@ -142,13 +175,13 @@
       "type": "featured-blog",
       "custom_css": [
         "h2 {font-size: 2rem; margin-bottom: 2rem;}",
-        "h3,a,[data-item=\"light-accent-text\"] {color: #fff;}",
-        "[data-item=\"block-link\"] > :after {border-color: #fff;}",
-        ".article--item--excerpt {color: white;}"
+        "h3,a,[data-item=\"light-accent-text\"] {color: #000;}",
+        "[data-item=\"block-link\"] > :after {border-color: #000;}",
+        ".article--item--excerpt {color: #000;}"
       ],
       "settings": {
         "aspect-ratio": "landscape",
-        "background-color": "accent-1",
+        "background-color": "light",
         "light-text": false,
         "container-width": 4,
         "spacing-above": true,
@@ -241,7 +274,8 @@
         "transition_type": "slide",
         "mobile-image-aspect-ratio": 134,
         "blocks_per_slide_mobile": "1",
-        "mobile-overlay": false
+        "mobile-overlay": false,
+        "title": "Add a title or tagline"
       }
     },
     "54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8": {
@@ -295,7 +329,6 @@
         "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-3"
       ],
       "custom_css": [
-        ".testimonials--root {background: transparent linear-gradient(180deg, #eee7dd 0%, #eee7dd00 100%) 0% 0% no-repeat;}",
         ".testimonials--name {font-family: Crimson-text; font-size: 13px;}",
         ".tes .testimonials--description {font-family: Crimson-text; font-size: 24px;}",
         ".testimonials--info {background: transparent;}"
@@ -315,6 +348,7 @@
   },
   "order": [
     "0b027bb5-1402-4393-9183-173a33549eae",
+    "2b278f3a-44e7-489b-a362-8739cf852742",
     "75eaabc3-47b5-4757-8339-55b2192e3e6a",
     "featured-collection-grid",
     "59f37b57-914c-46b9-87f1-a5093741e2b2",
