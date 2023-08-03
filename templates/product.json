@@ -99,6 +99,48 @@
         "mobile-media-layout": "slideshow"
       }
     },
+    "74fc4420-adb8-4faf-a80e-fa6e8bafa913": {
+      "type": "product-tabs",
+      "blocks": {
+        "f212af1e-2a40-4176-8d5c-5f71459cd7cc": {
+          "type": "description",
+          "settings": {
+            "label": "Info"
+          }
+        },
+        "51437baf-d677-4694-89a8-2dc1f4481681": {
+          "type": "content",
+          "settings": {
+            "label": "Customize + Photo Tips",
+            "content": "<p>Custom Product Details.<\/p>"
+          }
+        },
+        "6f10a7f3-68ff-4cea-acf0-cc1c68392abe": {
+          "type": "content",
+          "settings": {
+            "label": "Turnaround",
+            "content": "<p>Custom Product Details.<\/p>"
+          }
+        },
+        "a7c4be2c-202b-484d-9c2e-c761d0730b2a": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "f212af1e-2a40-4176-8d5c-5f71459cd7cc",
+        "51437baf-d677-4694-89a8-2dc1f4481681",
+        "6f10a7f3-68ff-4cea-acf0-cc1c68392abe",
+        "a7c4be2c-202b-484d-9c2e-c761d0730b2a"
+      ],
+      "settings": {
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "app-block-label": "Reviews"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -143,54 +185,12 @@
         "spacing-above": true,
         "spacing-below": true
       }
-    },
-    "74fc4420-adb8-4faf-a80e-fa6e8bafa913": {
-      "type": "product-tabs",
-      "blocks": {
-        "f212af1e-2a40-4176-8d5c-5f71459cd7cc": {
-          "type": "description",
-          "settings": {
-            "label": "Info"
-          }
-        },
-        "51437baf-d677-4694-89a8-2dc1f4481681": {
-          "type": "content",
-          "settings": {
-            "label": "Customize + Photo Tips",
-            "content": "<p>Custom Product Details.<\/p>"
-          }
-        },
-        "6f10a7f3-68ff-4cea-acf0-cc1c68392abe": {
-          "type": "content",
-          "settings": {
-            "label": "Turnaround",
-            "content": "<p>Custom Product Details.<\/p>"
-          }
-        },
-        "a7c4be2c-202b-484d-9c2e-c761d0730b2a": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "f212af1e-2a40-4176-8d5c-5f71459cd7cc",
-        "51437baf-d677-4694-89a8-2dc1f4481681",
-        "6f10a7f3-68ff-4cea-acf0-cc1c68392abe",
-        "a7c4be2c-202b-484d-9c2e-c761d0730b2a"
-      ],
-      "settings": {
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "app-block-label": "Reviews"
-      }
     }
   },
   "order": [
     "main",
+    "74fc4420-adb8-4faf-a80e-fa6e8bafa913",
     "related-products",
-    "1690907785e9ea0bce",
-    "74fc4420-adb8-4faf-a80e-fa6e8bafa913"
+    "1690907785e9ea0bce"
   ]
 }
