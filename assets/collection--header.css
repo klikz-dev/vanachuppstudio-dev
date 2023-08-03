@@ -3,8 +3,6 @@
   position: relative;
 }
 
-
-
 .collection--header--root[data-title-alignment="center"]
   .collection--header--wrapper {
   display: flex;
